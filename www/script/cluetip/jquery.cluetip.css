@@ -1,0 +1,81 @@
+@charset "utf-8";
+/* global */
+#cluetip-close img {
+	border: 0;
+}
+#cluetip-title {
+	overflow: hidden;
+}
+#cluetip-title #cluetip-close {
+	float: right;
+	position: relative;
+}
+#cluetip-extra {
+	display: none;
+}
+
+/***************************************
+   =cluetipClass: 'sjtip'
+-------------------------------------- */
+.cluetip-sjtip {
+	background-color: transparent;
+	color: #fff;
+}
+#cluetip-outer {
+	border: 1px solid #ff5800;
+	position: relative;
+	background-color: #000;
+}
+.cluetip-sjtip p#cluetip-title {
+	padding: 5px;
+	font-size: 0.8em;
+}
+.cluetip-sjtip #cluetip-inner {
+	display:none;
+}
+
+/***************************************
+   =cluetipClass: 'jtip'
+-------------------------------------- */
+.cluetip-jtip {
+	background-color: transparent;
+	color: #fff;
+}
+.cluetip-jtip p#cluetip-title {
+	padding: 2px 5px;
+}
+.cluetip-jtip #cluetip-inner {
+	width:228px;
+	padding: 0 5px;
+	display: inline-block;
+	font-size: 0.8em;
+	line-height:1.1em;
+}
+.cluetip-jtip div#cluetip-close { 
+	text-align: right;
+}
+
+/* -------------------------------------- */
+.cluetip-list {
+	margin: 0;
+	padding: 5px 0;
+	border-top:1px dotted #ff5800;
+}
+.cluetip-list img {
+	margin-right: 2px;
+	vertical-align:middle;
+}
+.cluetip-list a {
+	color: #ff5800;
+}
+.cluetip-list a:hover {
+	color: #fff;
+	text-decoration:none;
+}
+.cluetip-list p {
+	margin-left: 22px;
+}
+.cluetip-list p a {
+	color:#FFF;
+        display:block;
+}
