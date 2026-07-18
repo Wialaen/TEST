@@ -1,0 +1,604 @@
+@charset "utf-8";
+
+/** reset **/
+* {
+	margin:0;
+	padding:0;
+	border:0;
+	outline:0;
+	font-style:normal;
+	vertical-align:baseline;
+}
+body {
+	font-size:100%;
+	line-height:1;
+	color:#000;
+	background:#000;
+}
+a, 
+a:link, 
+a:visited, 
+a:hover, 
+a:active {
+	text-decoration:none;
+}
+:focus { outline:0; }
+
+/** Container **/
+#Contents {
+	position:relative;
+	width:960px;
+	height:600px;
+	background:url("bg_body.jpg") 0 0 no-repeat;
+	overflow:hidden;
+}
+
+/** Contents **/
+#CenterColmn {
+	position:absolute;
+	top:20px;
+	left:20px;
+	width:920px;
+	height:560px;
+}
+#Head {
+	position:absolute;
+	top:6px;
+	left:0;
+	width:620px;
+	height:48px;
+	background:url("bg_machinename.gif") 0 0 no-repeat;
+}
+#MachineName {
+	margin-left:22px;
+	height:48px;
+}
+#MachineName p {
+	padding-top:15px;
+	margin-right:22px;
+	width:580px;
+	text-align:left;
+	font-size:1.15em;
+	font-weight:bold;
+	color:#222;
+	white-space:nowrap;
+	overflow:hidden;
+}
+#WebLink a {
+	display:block;
+	position:absolute;
+	top:-10px;
+	left:650px;
+	width:180px;
+	height:65px;
+	z-index:+1;
+}
+#LanguageSelect {
+	position:absolute;
+	top:110px;
+	right:10px;
+	font-size:0.75em;
+	color:#000;
+	z-index:+1;
+}
+#LanguageSelect select {
+	font-size:1.2em;
+	color:#ff5800;
+	background:#fff;
+	border:1px solid #999;
+}
+#MainMenu {
+	position:relative;
+	width:920px;
+	height:560px;
+	overflow:hidden;
+}
+.option-title {
+	position:absolute;
+	bottom:348px;
+	right:10px;
+	width:240px;
+	height:30px;
+	background-position:0 top;
+	background-repeat: no-repeat;
+}
+#J .option-title { background-image:url("bg_optiontitle_ja.gif"); }
+#E .option-title { background-image:url("bg_optiontitle_en.gif"); }
+#E0 .option-title { background-image:url("bg_optiontitle_en.gif"); }
+#F0 .option-title { background-image:url("bg_optiontitle_fr.gif"); }
+#G0 .option-title { background-image:url("bg_optiontitle_de.gif"); }
+#C .option-title { background-image:url("bg_optiontitle_zh-cn.gif"); }
+#BP .option-title { background-image:url("bg_optiontitle_bp.gif"); }
+#R0 .option-title { background-image:url("bg_optiontitle_it.gif"); }
+
+.Btn_01 {
+	position:absolute;
+	bottom:400px;
+	left:0;
+	background-image:url("btn_ope-manual.gif");
+}
+.Btn_02 {
+	position:absolute;
+	bottom:400px;
+	left:320px;
+	background-image:url("btn_tool-manual.gif");
+}
+.Btn_03 {
+	position:absolute;
+	bottom:300px;
+	left:0;
+	background-image:url("btn_mazatrol.gif");
+}
+.Btn_04 {
+	position:absolute;
+	bottom:300px;
+	left:320px;
+	background-image:url("btn_eia-iso.gif");
+}
+.Btn_05 {
+	position:absolute;
+	bottom:200px;
+	left:0;
+	background-image:url("btn_param-list.gif");
+}
+.Btn_06 {
+	position:absolute;
+	bottom:200px;
+	left:320px;
+	background-image:url("btn_alarm-list.gif");
+}
+.Btn_07 {
+	position:absolute;
+	bottom:100px;
+	left:0;
+	background-image:url("btn_mainte-manual.gif");
+}
+.Btn_08 {
+	position:absolute;
+	bottom:100px;
+	left:320px;
+	background-image:url("btn_parts-list.gif");
+}
+.Btn_09 {
+	position:absolute;
+	bottom:0;
+	left:0;
+	background-image:url("btn_ele-diag.gif");
+}
+.Btn_10 {
+	position:absolute;
+	bottom:0;
+	left:320px;
+	background-image:url("btn_ladder-diag.gif");
+}
+.Btn_11 {
+	position:absolute;
+	bottom:280px;
+	right:10px;
+	background-image:url("btn_s_ope-manual.gif");
+}
+.Btn_12 {
+	position:absolute;
+	bottom:210px;
+	right:10px;
+	background-image:url("btn_s_mainte-manual.gif");
+}
+.Btn_13 {
+	position:absolute;
+	bottom:140px;
+	right:10px;
+	background-image:url("btn_s_pro-manual.gif");
+}
+.Btn_14 {
+	position:absolute;
+	bottom:70px;
+	right:10px;
+	background-image:url("btn_s_parts-list.gif");
+}
+.Btn_15 {
+	position:absolute;
+	bottom:0;
+	right:10px;
+	background-image:url("btn_s_ele-diag.gif");
+}
+.Btn_02o {
+	position:absolute;
+	bottom:400px;
+	left:320px;
+	background-image:url("btn_intelligent.gif");
+}
+.Btn_03o {
+	position:absolute;
+	bottom:300px;
+	left:0;
+	background-image:url("btn_program.gif");
+}
+.Btn_04o {
+	position:absolute;
+	bottom:300px;
+	left:320px;
+	background-image:url("btn_laser.gif");
+}
+.menu-btn {
+	display:block;
+	width:300px;
+	height:80px;
+	background-position:0 top;
+	background-repeat: no-repeat;
+}
+.menu-btn a {
+	display:block;
+	width:300px;
+	height:80px;
+	cursor:pointer;
+}
+.menu-btn_s {
+	display:block;
+	width:240px;
+	height:60px;
+	background-position:0 top;
+	background-repeat: no-repeat;
+}
+.menu-btn_s a {
+	display:block;
+	width:240px;
+	height:60px;
+	cursor:pointer;
+}
+.hover {
+	background-position:0 -81px;
+}
+.hover_s {
+	background-position:0 -61px;
+}
+.active {
+	background-position:0 bottom;
+}
+#J .ope-manual { background-image:url("btn_ope-manual_ja.gif"); }
+#E .ope-manual { background-image:url("btn_ope-manual_en.gif"); }
+#E0 .ope-manual { background-image:url("btn_ope-manual_en.gif"); }
+#F0 .ope-manual { background-image:url("btn_ope-manual_fr.gif"); }
+#G0 .ope-manual { background-image:url("btn_ope-manual_de.gif"); }
+#C .ope-manual { background-image:url("btn_ope-manual_zh-cn.gif"); }
+#BP .ope-manual { background-image:url("btn_ope-manual_bp.gif"); }
+#R0 .ope-manual { background-image:url("btn_ope-manual_it.gif"); }
+
+#J .tool-manual { background-image:url("btn_tool-manual_ja.gif"); }
+#E .tool-manual { background-image:url("btn_tool-manual_en.gif"); }
+#E0 .tool-manual { background-image:url("btn_tool-manual_en.gif"); }
+#F0 .tool-manual { background-image:url("btn_tool-manual_fr.gif"); }
+#G0 .tool-manual { background-image:url("btn_tool-manual_de.gif"); }
+#C .tool-manual { background-image:url("btn_tool-manual_zh-cn.gif"); }
+#BP .tool-manual { background-image:url("btn_tool-manual_bp.gif"); }
+#R0 .tool-manual { background-image:url("btn_tool-manual_it.gif"); }
+
+.mazatrol { background-image:url("btn_mazatrol_common.gif"); }
+#J .mazatrol { background-image:url("btn_mazatrol_ja.gif"); }
+#C .mazatrol { background-image:url("btn_mazatrol_zh-cn.gif"); }
+
+
+.eia-iso { background-image:url("btn_eia-iso_common.gif"); }
+#C .eia-iso { background-image:url("btn_eia-iso_zh-cn.gif"); }
+
+
+#J .pam-list { background-image:url("btn_pam-list_ja.gif"); }
+#E .pam-list { background-image:url("btn_pam-list_en.gif"); }
+#E0 .pam-list { background-image:url("btn_pam-list_en.gif"); }
+#F0 .pam-list { background-image:url("btn_pam-list_fr.gif"); }
+#G0 .pam-list { background-image:url("btn_pam-list_de.gif"); }
+#C .pam-list { background-image:url("btn_pam-list_zh-cn.gif"); }
+#BP .pam-list { background-image:url("btn_pam-list_bp.gif"); }
+#R0 .pam-list { background-image:url("btn_pam-list_it.gif"); }
+
+
+#J .param-list { background-image:url("btn_param-list_ja.gif"); }
+#E .param-list { background-image:url("btn_param-list_en.gif"); }
+#E0 .param-list { background-image:url("btn_param-list_en.gif"); }
+#F0 .param-list { background-image:url("btn_param-list_fr.gif"); }
+#G0 .param-list { background-image:url("btn_param-list_de.gif"); }
+#C .param-list { background-image:url("btn_param-list_zh-cn.gif"); }
+#BP .param-list { background-image:url("btn_param-list_bp.gif"); }
+#R0 .param-list { background-image:url("btn_param-list_it.gif"); }
+
+#J .alarm-list { background-image:url("btn_alarm-list_ja.gif"); }
+#E .alarm-list { background-image:url("btn_alarm-list_en.gif"); }
+#E0 .alarm-list { background-image:url("btn_alarm-list_en.gif"); }
+#F0 .alarm-list { background-image:url("btn_alarm-list_fr.gif"); }
+#G0 .alarm-list { background-image:url("btn_alarm-list_de.gif"); }
+#C .alarm-list { background-image:url("btn_alarm-list_zh-cn.gif"); }
+#BP .alarm-list { background-image:url("btn_alarm-list_bp.gif"); }
+#R0 .alarm-list { background-image:url("btn_alarm-list_it.gif"); }
+
+#J .inst-manual { background-image:url("btn_inst-manual_ja.gif"); }
+#E .inst-manual { background-image:url("btn_inst-manual_en.gif"); }
+#E0 .inst-manual { background-image:url("btn_inst-manual_en.gif"); }
+#F0 .inst-manual { background-image:url("btn_inst-manual_fr.gif"); }
+#G0 .inst-manual { background-image:url("btn_inst-manual_de.gif"); }
+#C .inst-manual { background-image:url("btn_inst-manual_zh-cn.gif"); }
+#BP .inst-manual { background-image:url("btn_inst-manual_bp.gif"); }
+#R0 .inst-manual { background-image:url("btn_inst-manual_it.gif"); }
+
+#J .mainte-manual { background-image:url("btn_mainte-manual_ja.gif"); }
+#E .mainte-manual { background-image:url("btn_mainte-manual_en.gif"); }
+#E0 .mainte-manual { background-image:url("btn_mainte-manual_en.gif"); }
+#F0 .mainte-manual { background-image:url("btn_mainte-manual_fr.gif"); }
+#G0 .mainte-manual { background-image:url("btn_mainte-manual_de.gif"); }
+#C .mainte-manual { background-image:url("btn_mainte-manual_zh-cn.gif"); }
+#BP .mainte-manual { background-image:url("btn_mainte-manual_bp.gif"); }
+#R0 .mainte-manual { background-image:url("btn_mainte-manual_it.gif"); }
+
+#J .parts-list { background-image:url("btn_parts-list_ja.gif"); }
+#E .parts-list { background-image:url("btn_parts-list_en.gif"); }
+#E0 .parts-list { background-image:url("btn_parts-list_en.gif"); }
+#F0 .parts-list { background-image:url("btn_parts-list_fr.gif"); }
+#G0 .parts-list { background-image:url("btn_parts-list_de.gif"); }
+#C .parts-list { background-image:url("btn_parts-list_zh-cn.gif"); }
+#BP .parts-list { background-image:url("btn_parts-list_bp.gif"); }
+#R0 .parts-list { background-image:url("btn_parts-list_it.gif"); }
+
+#J .ele-diag { background-image:url("btn_ele-diag_ja.gif"); }
+#E .ele-diag { background-image:url("btn_ele-diag_en.gif"); }
+#E0 .ele-diag { background-image:url("btn_ele-diag_en.gif"); }
+#F0 .ele-diag { background-image:url("btn_ele-diag_fr.gif"); }
+#G0 .ele-diag { background-image:url("btn_ele-diag_de.gif"); }
+#C .ele-diag { background-image:url("btn_ele-diag_zh-cn.gif"); }
+#BP .ele-diag { background-image:url("btn_ele-diag_bp.gif"); }
+#R0 .ele-diag { background-image:url("btn_ele-diag_it.gif"); }
+
+#J .ladder-diag { background-image:url("btn_ladder-diag_ja.gif"); }
+#E .ladder-diag { background-image:url("btn_ladder-diag_en.gif"); }
+#E0 .ladder-diag { background-image:url("btn_ladder-diag_en.gif"); }
+#F0 .ladder-diag { background-image:url("btn_ladder-diag_fr.gif"); }
+#G0 .ladder-diag { background-image:url("btn_ladder-diag_de.gif"); }
+#C .ladder-diag { background-image:url("btn_ladder-diag_zh-cn.gif"); }
+#BP .ladder-diag { background-image:url("btn_ladder-diag_bp.gif"); }
+#R0 .ladder-diag { background-image:url("btn_ladder-diag_it.gif"); }
+
+#J .s_ope-manual { background-image:url("btn_s_ope-manual_ja.gif"); }
+#E .s_ope-manual { background-image:url("btn_s_ope-manual_en.gif"); }
+#E0 .s_ope-manual { background-image:url("btn_s_ope-manual_en.gif"); }
+#F0 .s_ope-manual { background-image:url("btn_s_ope-manual_fr.gif"); }
+#G0 .s_ope-manual { background-image:url("btn_s_ope-manual_de.gif"); }
+#C .s_ope-manual { background-image:url("btn_s_ope-manual_zh-cn.gif"); }
+#BP .s_ope-manual { background-image:url("btn_s_ope-manual_bp.gif"); }
+#R0 .s_ope-manual { background-image:url("btn_s_ope-manual_it.gif"); }
+
+#J .s_mainte-manual { background-image:url("btn_s_mainte-manual_ja.gif"); }
+#E .s_mainte-manual { background-image:url("btn_s_mainte-manual_en.gif"); }
+#E0 .s_mainte-manual { background-image:url("btn_s_mainte-manual_en.gif"); }
+#F0 .s_mainte-manual { background-image:url("btn_s_mainte-manual_fr.gif"); }
+#G0 .s_mainte-manual { background-image:url("btn_s_mainte-manual_de.gif"); }
+#C .s_mainte-manual { background-image:url("btn_s_mainte-manual_zh-cn.gif"); }
+#BP .s_mainte-manual { background-image:url("btn_s_mainte-manual_bp.gif"); }
+#R0 .s_mainte-manual { background-image:url("btn_s_mainte-manual_it.gif"); }
+
+#J .s_pro-manual { background-image:url("btn_s_pro-manual_ja.gif"); }
+#E .s_pro-manual { background-image:url("btn_s_pro-manual_en.gif"); }
+#E0 .s_pro-manual { background-image:url("btn_s_pro-manual_en.gif"); }
+#F0 .s_pro-manual { background-image:url("btn_s_pro-manual_fr.gif"); }
+#G0 .s_pro-manual { background-image:url("btn_s_pro-manual_de.gif"); }
+#C .s_pro-manual { background-image:url("btn_s_pro-manual_zh-cn.gif"); }
+#BP .s_pro-manual { background-image:url("btn_s_pro-manual_bp.gif"); }
+#R0 .s_pro-manual { background-image:url("btn_s_pro-manual_it.gif"); }
+
+#J .s_parts-list { background-image:url("btn_s_parts-list_ja.gif"); }
+#E .s_parts-list { background-image:url("btn_s_parts-list_en.gif"); }
+#E0 .s_parts-list { background-image:url("btn_s_parts-list_en.gif"); }
+#F0 .s_parts-list { background-image:url("btn_s_parts-list_fr.gif"); }
+#G0 .s_parts-list { background-image:url("btn_s_parts-list_de.gif"); }
+#C .s_parts-list { background-image:url("btn_s_parts-list_zh-cn.gif"); }
+#BP .s_parts-list { background-image:url("btn_s_parts-list_bp.gif"); }
+#R0 .s_parts-list { background-image:url("btn_s_parts-list_it.gif"); }
+
+#J .s_ele-diag { background-image:url("btn_s_ele-diag_ja.gif"); }
+#E .s_ele-diag { background-image:url("btn_s_ele-diag_en.gif"); }
+#E0 .s_ele-diag { background-image:url("btn_s_ele-diag_en.gif"); }
+#F0 .s_ele-diag { background-image:url("btn_s_ele-diag_fr.gif"); }
+#G0 .s_ele-diag { background-image:url("btn_s_ele-diag_de.gif"); }
+#C .s_ele-diag { background-image:url("btn_s_ele-diag_zh-cn.gif"); }
+#BP .s_ele-diag { background-image:url("btn_s_ele-diag_bp.gif"); }
+#R0 .s_ele-diag { background-image:url("btn_s_ele-diag_it.gif"); }
+
+.menu-btn_nohover {
+	display:block;
+	width:300px;
+	height:80px;
+	background-position:0 top;
+	background-repeat: no-repeat;
+}
+.btn_SA_name,
+.btn_SG_name {
+	position:absolute;
+	top:0;
+	left:0;
+	width:300px;
+	height:30px;
+	background-position:0 -20px;
+	background-repeat: no-repeat;
+}
+#J .ope-manual_sg { background-image:url("btn_ope-manual_sg_ja.gif"); }
+#J .ope-manual_sa { background-image:url("btn_ope-manual_sa_ja.gif"); }
+#E .ope-manual_sa,
+#E .ope-manual_sg { background-image:url("btn_ope-manual_sg_en.gif"); }
+#E0 .ope-manual_sa,
+#E0 .ope-manual_sg { background-image:url("btn_ope-manual_sg_en.gif"); }
+#F0 .ope-manual_sa,
+#F0 .ope-manual_sg { background-image:url("btn_ope-manual_sg_fr.gif"); }
+#G0 .ope-manual_sa,
+#G0 .ope-manual_sg { background-image:url("btn_ope-manual_sg_de.gif"); }
+#C .ope-manual_sa,
+#C .ope-manual_sg { background-image:url("btn_ope-manual_sg_zh-cn.gif"); }
+#BP .ope-manual_sg { background-image:url("btn_ope-manual_sg_bp.gif"); }
+#BP .ope-manual_sa { background-image:url("btn_ope-manual_sa_bp.gif"); }
+#R0 .ope-manual_sa, 
+#R0 .ope-manual_sg { background-image:url("btn_ope-manual_sg_it.gif"); }
+
+.btn_SA_a,
+.btn_SG_a,
+.btn_NC_a {
+	position:absolute;
+	top:31px;
+	left:85px;
+}
+.btn_SA_b,
+.btn_SG_b,
+.btn_NC_b {
+	position:absolute;
+	top:31px;
+	left:152px;
+}
+.btn_SA_c,
+.btn_SG_c {
+	position:absolute;
+	top:31px;
+	left:219px;
+}
+.buttons {
+	width:68px;
+	height:41px;
+}
+.buttons a {
+	display:block;
+	width:68px;
+	height:41px;
+	cursor:pointer;
+	background-position:0 top;
+	background-repeat: no-repeat;
+}
+#J .btn_SG_a a { background-image:url("btn_sg_a_ja.gif"); }
+#E .btn_SG_a a { background-image:url("btn_sg_a_en.gif"); }
+#E0 .btn_SG_a a { background-image:url("btn_sg_a_en.gif"); }
+#F0 .btn_SG_a a { background-image:url("btn_sg_a_fr.gif"); }
+#G0 .btn_SG_a a { background-image:url("btn_sg_a_de.gif"); }
+#C .btn_SG_a a { background-image:url("btn_sg_a_zh-cn.gif"); }
+#BP .btn_SG_a a { background-image:url("btn_sg_a_bp.gif"); }
+#R0 .btn_SG_a a { background-image:url("btn_sg_a_it.gif"); }
+
+#J .btn_SA_a a,
+#J .btn_NC_a a { background-image:url("btn_sa_a_ja.gif"); }
+#E .btn_SA_a a,
+#E .btn_NC_a a { background-image:url("btn_sa_a_en.gif"); }
+#E0 .btn_SA_a a,
+#E0 .btn_NC_a a { background-image:url("btn_sa_a_en.gif"); }
+#F0 .btn_SA_a a,
+#F0 .btn_NC_a a { background-image:url("btn_sa_a_fr.gif"); }
+#G0 .btn_SA_a a,
+#G0 .btn_NC_a a { background-image:url("btn_sa_a_de.gif"); }
+#C .btn_SA_a a,
+#C .btn_NC_a a { background-image:url("btn_sa_a_zh-cn.gif"); }
+#BP .btn_SA_a a,
+#BP .btn_NC_a a { background-image:url("btn_sa_a_bp.gif"); }
+#R0 .btn_SA_a a,
+#R0 .btn_NC_a a { background-image:url("btn_sa_a_it.gif"); }
+
+#J .btn_SA_b a,
+#J .btn_SG_b a { background-image:url("btn_sg_b_ja.gif"); }
+#E .btn_SA_b a,
+#E .btn_SG_b a { background-image:url("btn_sg_b_en.gif"); }
+#E0 .btn_SA_b a,
+#E0 .btn_SG_b a { background-image:url("btn_sg_b_en.gif"); }
+#F0 .btn_SA_b a,
+#F0 .btn_SG_b a { background-image:url("btn_sg_b_fr.gif"); }
+#G0 .btn_SA_b a,
+#G0 .btn_SG_b a { background-image:url("btn_sg_b_de.gif"); }
+#C .btn_SA_b a,
+#C .btn_SG_b a { background-image:url("btn_sg_b_zh-cn.gif"); }
+#BP .btn_SA_b a,
+#BP .btn_SG_b a { background-image:url("btn_sg_b_bp.gif"); }
+#R0 .btn_SA_b a,
+#R0 .btn_SG_b a { background-image:url("btn_sg_b_it.gif"); }
+
+#J .btn_NC_b a { background-image:url("btn_nc_ja.gif"); }
+#E .btn_NC_b a { background-image:url("btn_nc_en.gif"); }
+#E0 .btn_NC_b a { background-image:url("btn_nc_en.gif"); }
+#F0 .btn_NC_b a { background-image:url("btn_nc_fr.gif"); }
+#G0 .btn_NC_b a { background-image:url("btn_nc_de.gif"); }
+#C .btn_NC_b a { background-image:url("btn_nc_zh-cn.gif"); }
+#BP .btn_NC_b a { background-image:url("btn_nc_bp.gif"); }
+#R0 .btn_NC_b a { background-image:url("btn_nc_it.gif"); }
+
+#J .btn_SA_c a,
+#J .btn_SG_c a { background-image:url("btn_sg_c_ja.gif"); }
+#E .btn_SA_c a,
+#E .btn_SG_c a { background-image:url("btn_sg_c_en.gif"); }
+#E0 .btn_SA_c a,
+#E0 .btn_SG_c a { background-image:url("btn_sg_c_en.gif"); }
+#F0 .btn_SA_c a,
+#F0 .btn_SG_c a { background-image:url("btn_sg_c_fr.gif"); }
+#G0 .btn_SA_c a,
+#G0 .btn_SG_c a { background-image:url("btn_sg_c_de.gif"); }
+#C .btn_SA_c a,
+#C .btn_SG_c a { background-image:url("btn_sg_c_zh-cn.gif"); }
+#BP .btn_SA_c a,
+#BP .btn_SG_c a { background-image:url("btn_sg_c_bp.gif"); }
+#R0 .btn_SA_c a,
+#R0 .btn_SG_c a { background-image:url("btn_sg_c_it.gif"); }
+
+#J .intelligent { background-image:url("btn_intelligent_ja.gif"); }
+#E .intelligent { background-image:url("btn_intelligent_common.gif"); }
+#E0 .intelligent { background-image:url("btn_intelligent_common.gif"); }
+#F0 .intelligent { background-image:url("btn_intelligent_common.gif"); }
+#G0 .intelligent { background-image:url("btn_intelligent_common.gif"); }
+#C .intelligent { background-image:url("btn_intelligent_common.gif"); }
+#BP .intelligent { background-image:url("btn_intelligent_common.gif"); }
+#R0 .intelligent { background-image:url("btn_intelligent_common.gif"); }
+
+#J .m_program { background-image:url("btn_program_ja.gif"); }
+#E .m_program { background-image:url("btn_program_en.gif"); }
+#E0 .m_program { background-image:url("btn_program_en.gif"); }
+#F0 .m_program { background-image:url("btn_program_fr.gif"); }
+#G0 .m_program { background-image:url("btn_program_de.gif"); }
+#C .m_program { background-image:url("btn_program_zh-cn.gif"); }
+#BP .m_program { background-image:url("btn_program_bp.gif"); }
+#R0 .m_program { background-image:url("btn_program_it.gif"); }
+
+#J .laser { background-image:url("btn_laser_ja.gif"); }
+#E .laser { background-image:url("btn_laser_common.gif"); }
+#E0 .laser { background-image:url("btn_laser_common.gif"); }
+#F0 .laser { background-image:url("btn_laser_common.gif"); }
+#G0 .laser { background-image:url("btn_laser_common.gif"); }
+#C .laser { background-image:url("btn_laser_common.gif"); }
+#BP .laser { background-image:url("btn_laser_common.gif"); }
+#R0 .laser { background-image:url("btn_laser_common.gif"); }
+
+p.btn_text {
+	position:absolute;
+	top:50%;
+	left:93px;
+	width:184px;
+	height:48px;
+	margin-top:-1.48em;
+	font-size:1em;
+	font-weight:bold;
+	color:#000;
+	overflow:hidden;
+}
+p.btn_text_s {
+	position:absolute;
+	top:50%;
+	left:70px;
+	width:155px;
+	height:40px;
+	margin-top:-1.48em;
+	font-size:0.85em;
+	font-weight:bold;
+	color:#000;
+	overflow:hidden;
+}
+
+#Footer {
+	position:absolute;
+	bottom:-17px;
+	right:5px;
+}
+#Footer p {
+	font-size:0.6em;
+	color:#aaa;
+}
+#Version {
+	position:absolute;
+	bottom:-17px;
+	left:5px;
+	font-size:0.6em;
+	color:#aaa;
+}
