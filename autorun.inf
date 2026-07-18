@@ -1,0 +1,4 @@
+[autorun]
+icon=icon.ico
+open=rundll32.exe url,FileProtocolHandler www\AutoRun.html
+label=529-368959-CE
